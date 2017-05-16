@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<title>CursoJS</title>
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<script src="ini.js" type="application/javascript" charset="utf-8" async defer></script>
+	</head>
+	<body onload="alert('pagina cargada');">
+		<p id="parrafo">í</p>
+		<form action="procesa.php" accept-charset="utf-8" onsubmit="alert('Enviado');">
+			Nombre: <input type="text" required name="nombre" value="" placeholder="Introduce tu nombre" id="nombre" pattern="[A-Za-z]{3,20}"><br>
+			Email: <input type="email" required name="email" value="" placeholder="Introduce tu email" id="email"><br>
+			Teléfono: <input type="tel" required name="telefono" value="" placeholder="Introduce tu teléfono" id="telefono"><br>
+			Fecha nacimiento: <input type="date" required name="fecha" value="" placeholder="Introduce tu fecha de nacimiento" id="fecha"><br>
+			<p class="mousejs" onmouseover="alert('Soy P');">Onmuse</p>
+			<button type="submit" onclick="alert('has pulsado el boton');">ENVIAR</button>
+		</form>
+		<br>
+		<a href="javascript:alert('Hola enlace');">Pulsa en el enlace</a>
+		<br><br>
+		<div id="miDiv"> Un DIV </div>
+		<br>
+		<button type="button" onclick="creaParrafos();">Crea párrafos</button>
+		<br>
+		<button type="button" onclick="creaDiv();">Crea divs</button>
+	</body>
+</html>
